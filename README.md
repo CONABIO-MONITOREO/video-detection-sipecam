@@ -39,7 +39,9 @@ Verificar que se construyó correctamente la imagen con el comando
 Ejecutar el contenedor especificando el path a las imagenes, el path al archivo de salidas y el path del modelo con el siguiente comando
 
 ``` shell
-  docker run -it -v /path/to/data/:/data/ -v /path/to/with_animal/:/with_animal -v /path/to/model.pt:/model/model.pt megadetector-video:1.0 bash
+  docker run -it -v /path/to/data/:/data/ -v /home/promero/video-detection-sipecam/with_animal/:/with_animal/ -v /home/promero/video-detection-sipecam/model.pt:/model/model.pt megadetector-video:1.0 bash
 ```
+
+docker run -it -v /LUSTRE_IMAGENES/:/data/ -v /path/to/with_animal/:/with_animal/ -v /path/to/model.pt:/model/model.pt megadetector-video:1.0 bash
 
 Seguir los pasos.
